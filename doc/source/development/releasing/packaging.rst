@@ -13,12 +13,16 @@ Prerequisites
 *************
 Prepare baseline images::
 
+    # Debian stretch
     make build-debian-stretch-amd64-baseline
     make build-debian-stretch-armhf-baseline
 
+    # Debian buster
     make build-debian-buster-amd64-baseline
     make build-debian-buster-armhf-baseline
+    make build-debian-buster-arm64-baseline
 
+    # Ubuntu bionic
     make build-ubuntu-bionic-amd64-baseline
 
 
@@ -35,6 +39,9 @@ Build Kotori package::
     # armhf
     make debian-package flavor=standard dist=stretch arch=armhf version=0.24.5
     make debian-package flavor=standard dist=buster arch=armhf version=0.24.5
+
+    # arm64
+    make debian-package flavor=standard dist=buster arch=arm64 version=0.24.5
 
 
 *************

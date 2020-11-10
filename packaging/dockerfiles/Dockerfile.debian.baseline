@@ -4,7 +4,7 @@ FROM ${BASE_IMAGE} AS debian-build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get upgrade --yes
 
 # Build foundation and header files
 RUN apt-get install --yes --no-install-recommends \

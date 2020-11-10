@@ -141,6 +141,10 @@ build-debian-buster-armhf-baseline:
 	docker build --tag daq-tools/buster-armhf-baseline:0.7.0 --build-arg BASE_IMAGE=balenalib/armv7hf-debian:buster-build - < packaging/dockerfiles/Dockerfile.debian.baseline
 	docker tag daq-tools/buster-armhf-baseline:0.7.0 daq-tools/buster-armhf-baseline:latest
 
+build-debian-buster-arm64-baseline:
+	docker build --tag daq-tools/buster-arm64-baseline:0.7.0 --build-arg BASE_IMAGE=arm64v8/python:2-buster - < packaging/dockerfiles/Dockerfile.debian.baseline
+	docker tag daq-tools/buster-arm64-baseline:0.7.0 daq-tools/buster-arm64-baseline:latest
+
 
 build-ubuntu-bionic-amd64-baseline:
 	docker build --tag daq-tools/bionic-amd64-baseline:0.7.0 --build-arg BASE_IMAGE=ubuntu:bionic-20200219 - < packaging/dockerfiles/Dockerfile.debian.baseline
