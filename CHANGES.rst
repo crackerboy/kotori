@@ -10,6 +10,8 @@ in progress
 - Address compatibility with Grafana 7.4.0
 - Fix error logging after migration to Python 3
 - Add possibility to acquire bulk readings in JSON format
+- Add possibility to acquire bulk readings in compact JSON format,
+  with timestamps as keys
 
 
 .. _kotori-0.25.0:
