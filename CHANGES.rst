@@ -9,6 +9,7 @@ in progress
 - Fix logging when running under pytest with "--capture=no"
 - Address compatibility with Grafana 7.4.0
 - Fix error logging after migration to Python 3
+- Add possibility to acquire bulk readings in JSON format
 
 
 .. _kotori-0.25.0:
